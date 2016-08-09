@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Zika's Here!</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="zika.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	  <meta charset='UTF-8'>
+	  <script src="https://use.typekit.net/elm5bhp.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+<img id="world" class="world" src="http://11735-presscdn-0-72.pagely.netdna-cdn.com/wp-content/uploads/2016/02/zika_world.jpg">
+
+<h1 class="animated slideInLeft">5 Things You Want to Know About Zika</h1>
+
+<p id="arrow" class="arrow"><a href="zika.html">&#8688;</a></p>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script>
+		<style>
+		canvas[resize] {
+			background-color: white;
+			height: 100%;
+      width: 100%;
+		}
+
+		</style>
+		<script type="text/paperscript" canvas="myCanvas">
+		function onMouseMove(e) {
+			var s = new Shape.Circle(e.point, 20);
+			s.fillColor = 'red';
+      s.onFrame = shrinkCircle;
+		}
+    
+    function shrinkCircle(){
+   this.radius -= .5;
+  
+  if (this.radius < 1){
+    this.remove();
+  }
+}
+		</script>
+
+    
+		<canvas id="myCanvas" resize></canvas>
+

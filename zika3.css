@@ -1,0 +1,26 @@
+html {
+	background-image: url("https://media.npr.org/assets/img/2016/04/14/elife-zika-map_wide-796bd5c8acb7a72110e2bd8730391a5bde931a3d.jpg?s=1400");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+body {
+	margin-top: 50px;
+	margin-left: 100px;
+	color: #000066;
+}
+h1 {
+  font-family: "eloquent-jf-pro",sans-serif;
+  font-size: 5em;
+  }
+
+p {
+	font-family: "paralucent-condensed",sans-serif;
+	color: #000066;
+	margin: 50px 0 0 150px;
+	font-size: 20px;
+	width: 1000px;
+}
+
+img {
+	width: 200px;
+}

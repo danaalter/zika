@@ -1,0 +1,80 @@
+body {
+	margin-top: 100px;
+	margin-left: 100px;
+	color: #000066;
+	font-family: mrs-eaves-xl-serif-narrow;
+}
+h1 {
+  font-family: "acier-bat-gris",sans-serif;
+  font-size: 6em;
+  }
+
+p {
+	margin-top: -80px;
+	width: 700px;
+	margin-left: 500px;
+	font-size: 23px;
+}
+
+a {
+	text-decoration: none;
+	margin-left: 570px;
+	font-size: 2em;
+}
+
+img {
+	float: left;
+	width: 400px;
+	margin-top: -20px;
+}
+
+div {
+	margin-top: 10px;
+	margin-left: 550px;
+font-size: 20px;
+padding: 10px;
+}
+
+.button {
+	text-align: center;
+	font-size: 2em;
+	border: 1px solid #000066;
+	border-radius: 5px;
+	width: 550px;
+	line-height: 25px; 
+	animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: white;
+
+  }
+  100% {
+    background-color: #000066;
+    color: white;
+  }
+}
+
+
+.rotate{
+-webkit-transition-duration: 0.8s;
+-moz-transition-duration: 0.8s;
+-o-transition-duration: 0.8s;
+transition-duration: 0.8s;
+
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+-o-transition-property: -o-transform;
+transition-property: transform;
+
+overflow:hidden;
+
+}
+
+.rotate:hover
+{
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}

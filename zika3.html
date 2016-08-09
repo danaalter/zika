@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="zika3.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	  <meta charset='UTF-8'>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script>
+
+	  <script src="https://use.typekit.net/elm5bhp.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<style type="text/css">
+canvas[resize] {
+		width:1000px;
+		height: 800px;
+		position: absolute;
+		top:0;
+		left:0;
+		}
+		h1{
+			position: relative;
+			z-index:99;
+		}
+.hidden{
+	display: none;
+}
+
+		</style>
+		<script type="text/paperscript" canvas="myCanvas">
+
+
+		var ball = new Shape.Circle(50, 50, 50);
+		var raster = new Raster('mosquitoe');
+
+		raster.position = view.center;
+
+		ball.fillColor = 'red';
+		ball.speed = 1;
+		
+
+		function onFrame(event){
+
+ball.fillColor.hue += 0.5;
+
+			ball.position.x = ball.position.x +ball.speed;
+			ball.position.y = ball.position.y +ball.speed;
+
+			raster.position.x = raster.position.x +ball.speed;
+			raster.position.y = raster.position.y +ball.speed;
+
+console.log(ball.position);
+				
+if (ball.position.y > 900 || ball.position.x < 50) {
+	ball.speed *= -1;
+
+}
+}
+		</script>
+</head>
+<canvas id="myCanvas" resize></canvas>
+<body>
+<h1>Where is the Zika virus now?</h1>
+<p> Everywhere. It's everywhere. The Zika virus is now being locally transmitted in Aruba, Barbados, Bolivia, Bonaire, Brazil, Colombia, Puerto Rico, Costa Rica, Curacao, Dominican Republic, Ecuador, El Salvador, French Guiana, Guadeloupe, Guatemala, Guyana, Haiti, Honduras, Jamaica, Marshall Islands, Martinique, Mexico, Nicaragua, Panama, Paraguay, Saint Martin, Suriname, Trinidad and Tobago, U.S. Virgin Islands, Venezuela, American Samoa, Samoa, Tonga and Cape Verde, according to the CDC and WHO.
+Zika has arrived in the United States from travelers returning from these infected areas and, in one confirmed case and 14 suspected cases, through sexual transmission. Don't leave your house. 
+<p> <a href="zika4.html">What can you do to protect yourself from Zika?</a>
+	<img src="mosquito.png" id="mosquitoe" class="hidden"> 
+</body>

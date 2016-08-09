@@ -1,0 +1,64 @@
+html {
+	cursor: help;
+}
+p {
+font-family: "paralucent-condensed",sans-serif;
+color: #000066;
+margin: 50 150px 20 150px;
+font-size: 20px;
+width: 1000px;
+}
+
+h1 {
+margin: 100 125px 0 125px;
+  font-size: 4em;
+  font-family: "eloquent-jf-pro",sans-serif;
+  width: 600px;
+  color: #000066;
+  }
+  div #number{
+  	float: left;
+  	margin-top: 100px;
+
+  }
+
+ #sign {
+ 	float: right;
+ 	width: 375px;
+ 	margin-right: 175px;
+ 	margin-top: -50px;
+  animation: 3s;
+ } 
+
+.selected {
+  position: relative;
+}
+.selected:after {
+  content:"\25CE";
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 100%;
+    padding: 5px;
+  font-size: 35px;
+  position: absolute;
+  top: -5px;
+  left: 175px;
+}
+
+a {
+	font-family: "paralucent-condensed",sans-serif;
+	text-decoration: none;
+	margin-left: 640px;
+	border: 1px solid #000066;
+	border-radius: 2px;
+	padding: 10px;
+	font-size: 20px;
+	transition: 3s;
+
+}
+a:visited {
+	font-family: "paralucent-condensed",sans-serif;
+	color: #000066;
+}
