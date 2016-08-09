@@ -19,6 +19,7 @@ p {
 	margin: 50px 0 0 150px;
 	font-size: 20px;
 	width: 1000px;
+	z-index:99;
 }
 
 img {
