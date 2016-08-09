@@ -47,7 +47,8 @@ margin: 100 125px 0 125px;
   left: 175px;
 }
 
-a {
+a {	
+	display: inline-block;
 	font-family: "paralucent-condensed",sans-serif;
 	text-decoration: none;
 	margin-left: 640px;
